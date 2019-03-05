@@ -1,0 +1,21 @@
+<h1> Counted</h1>
+<br>
+
+<a href="{% url 'home' %}">Back to home page</a>
+<h1> Your Text </h1>
+{{data}} 😂 
+<br>
+<h1> length of text</h1>
+{{length}}
+<br>
+
+
+<h1> frequency List</h1>
+
+{% for word, value in worddic %}
+
+{{word}}  =  {{value}}
+
+<br/>
+
+{% endfor %}
